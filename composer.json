@@ -1,0 +1,34 @@
+{
+    "name": "zeeyn/evocms-custom-template",
+    "description": "Custom template processor for EvolutionCMS",
+    "type": "package",
+    "require": {
+
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikita 'ZeeyN' Rusakov",
+            "email": "zeeynnik@gmail.com"
+        },
+        {
+            "name": "Alexander Pashkevich",
+            "email": "sertious2008.wortk3@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EvolutionCMS\\EvoCustom\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EvolutionCMS\\EvoCustom\\EvoCustomTemplateServiceProvider"
+            ],
+            "commands": [
+                {"ect:install": []}
+            ]
+        }
+    }
+}
